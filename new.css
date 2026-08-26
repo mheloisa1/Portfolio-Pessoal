@@ -1,7 +1,50 @@
-* {
+body {
 background: #6e94ff;
 background: linear-gradient(90deg,rgba(110, 148, 255, 1) 0%, rgba(203, 125, 255, 1) 50%, rgba(255, 122, 251, 1) 100%);
 font-family: 'Poppins', sans-serif;
 color: black;
 box-sizing: border-box;
+}
+
+header {
+display: flex;
+justify-content: space-between;
+padding: 40px 50px;
+align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    margin-left: 20px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+#Sobre img{
+border-radius: 1000%;
+object-fit: cover;
+border: 1px solid black;
+}
+
+#Sobre {
+display: flex;
+align-items: right;
+align-items: center;
+gap : 20px;
+}
+
+#Sobre h2{
+display: flex;
+flex-direction: column;
+text-align:start;
+text-decoration:solid;
+font-size:larger;
+}
+
+#Sobre p{
+font-size: 15px;
 }
