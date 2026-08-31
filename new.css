@@ -1,6 +1,5 @@
 body {
-background: #6e94ff;
-background: linear-gradient(90deg,rgba(110, 148, 255, 1) 0%, rgba(203, 125, 255, 1) 50%, rgba(255, 122, 251, 1) 100%);
+background: #BE7ABF;
 font-family: 'Poppins', sans-serif;
 color: black;
 box-sizing: border-box;
@@ -48,4 +47,13 @@ font-size:larger;
 
 #Sobre p{
 font-size: 15px;
+}
+
+footer {
+    padding: 5px 10px;
+    display: flex;
+    flex-direction:row;
+    align-items: left;
+    gap: 10px;
+    text-align: left;
 }
