@@ -1,68 +1,81 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    list-style: none;
-    text-decoration: none;
-    color: black;
-    box-sizing: border-box;
-}
-
 body {
-background: #FA69B4;
-background: linear-gradient(214deg,rgba(250, 105, 180, 1) 0%, rgba(255, 161, 208, 1) 81%);}
-
-header, section {
-    padding: 40px 50px;
+background: #6e94ff;
+background: linear-gradient(90deg,rgba(110, 148, 255, 1) 0%, rgba(203, 125, 255, 1) 50%, rgba(255, 122, 251, 1) 100%);
+font-family: 'Poppins', sans-serif;
+color: black;
+box-sizing: border-box;
 }
 
 header {
+display: flex;
+justify-content: flex-start;
+padding: 40px 50px;
+align-items: center;
+gap: 250px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    margin-left: 20px;
+}
+
+nav {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    
-}
-header .links {
-    display: flex;
-    gap: 20px;
 }
 
-header .Habilidades {
-    display: flex;
-    align-items: right;
-    gap : 20px;
+#Sobre img{
+border-radius: 1000%;
+object-fit: cover;
+border: 1px solid black;
 }
 
-.sobre-mim,
-.Entre em contato {
-    display: flex;
-    align-items: right;
-    align-items: center;
-    gap : 20px;
+#Sobre {
+display: flex;
+align-items: right;
+align-items: center;
+gap : 20px;
 }
 
-.sobre-mim img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 1px solid black;
+#Sobre h2{
+display: flex;
+flex-direction: column;
+text-align:start;
+text-decoration:solid;
+font-size:larger;
 }
 
-#projetos{
-        display: flex;
-    align-items: right;
-    align-items: center;
-    gap : 20px;
+#Sobre p{
+font-size: 15px;
 }
 
-#mensagem {
-    background-color: #A64677;
-    text-decoration: #fff;
-    padding: 10px 5%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
+#btn-ver-mais {
+    margin-top: 10px;
+    padding: 6px 16px;
+    background: transparent;
+    border: 1px solid #333;
+    border-radius: 4px;
+    color: #000000;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+#btn-ver-mais:hover {
+    background: #333;
+    color: #fff;
+}
+
+footer {
     text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    background-color: transparent;
+    color: #333;
+    font-size: 14px;
+    gap: 10px;
 }
+
