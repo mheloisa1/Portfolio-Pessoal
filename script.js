@@ -1,24 +1,39 @@
-const trilho = document.getElementById("trilho");
-const slides = document.querySelectorAll(".slide");
-let indice = 0;
+const botaoVerMais = document.getElementById("btn-ver-mais");
 
-function irPara(novoIndice) {
-  indice = (novoIndice + slides.length) % slides.length;
-  trilho.style.transform = `translateX(-${indice * 100}%)`;
-}
+const conteudoExtra = document.getElementById("conteudo-extra");
 
-document.getElementById("proximo").addEventListener("click", () => {
-  irPara(indice + 1);
+botaoVerMais.addEventListener("click", function () {
+
+  const novoParagrafo = document.createElement("p");
+
+    novoParagrafo.textContent =
+        "Estou em processo de aprendizado e desenvolvimento profissional.";
+
+    conteudoExtra.appendChild(novoParagrafo);
+
 });
 
-document.getElementById("anterior").addEventListener("click", () => {
-  irPara(indice - 1);
-});
+let mostrandoMais = false;
 
-let autoplay = setInterval(() => irPara(indice + 1), 3000);
+botaoVerMais.addEventListener("click", function () {
 
-document.getElementById("proximo").addEventListener("click", () => {
-  irPara(indice + 1);
-  clearInterval(autoplay);
-  autoplay = setInterval(() => irPara(indice + 1), 3000);
+   if (mostrandoMais === false) {
+
+       const novoParagrafo = document.createElement("p");
+
+      conteudoExtra.appendChild(novoParagrafo);
+
+      botaoVerMais.textContent = "Ver menos";
+
+        mostrandoMais = true;
+
+    } else {
+
+        conteudoExtra.innerHTML = "";
+
+        botaoVerMais.textContent = "Ver mais";
+
+        mostrandoMais = false;
+    }
+
 });
