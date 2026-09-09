@@ -1,18 +1,29 @@
 body {
 background: #6e94ff;
-background: linear-gradient(90deg,rgba(110, 148, 255, 1) 0%, rgba(203, 125, 255, 1) 50%, rgba(255, 122, 251, 1) 100%);
+background: #A9D9C2;
 font-family: 'Poppins', sans-serif;
 color: black;
 box-sizing: border-box;
 }
 
 header {
-display: flex;
-justify-content: flex-start;
-padding: 40px 50px;
-align-items: center;
-gap: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px 50px;
+    align-items: center;
+    gap: 20px;
 }
+
+@media (max-width: 480px) {
+    nav{
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+        gap: 8px;
+    }
+}  
+
 
 nav a {
     text-decoration: none;
@@ -23,6 +34,7 @@ nav a {
 nav {
     display: flex;
     align-items: center;
+    padding: 30px;
 }
 
 #Sobre img{
@@ -40,7 +52,6 @@ gap : 20px;
 
 #Sobre h2{
 display: flex;
-flex-direction: column;
 text-align:start;
 text-decoration:solid;
 font-size:larger;
@@ -70,12 +81,34 @@ font-size: 15px;
 footer {
     text-align: center;
     justify-content: center;
+    align-items: center;
     display: flex;
     flex-direction: row;
-    padding: 20px;
+    flex-wrap: wrap;
+    padding: 24px 16px;
     background-color: transparent;
     color: #333;
     font-size: 14px;
-    gap: 10px;
+    gap: 12px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+footer p {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+footer a:hover {
+    color: #0066cc;
+    opacity: 0.85;
+}
+  
